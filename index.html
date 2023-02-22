@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up</title>
-        <link rel="./assets/CSS/style.css">
+        <link rel='stylesheet' href="./assets/CSS/style.css"/>
     </head>
 
     <body>
@@ -14,18 +14,18 @@
             <h1>Sign Up</h1>
         </header>
 
-        <form>
+        <form >
             <div>
                 <input placeholder = "First Name">
                 <input placeholder="Last Name">
             </div>
 
             <div>
-                <input placeholder = "Mobile No.">
+                <input class="wide" placeholder = "Mobile No.">
             </div>
 
             <div>
-                <input placeholder = "Email Address">
+                <input class="wide" placeholder = "Email Address">
             </div>
 
             <div>
@@ -33,15 +33,16 @@
                 <input placeholder="Confirm Password">
             </div>
 
-            <div>
-                <input type = 'checkbox'>
-                <p>By clicking Register, you agree to the Terms and Conditions set out bu this
+            <div id="agree">
+                <input class="agreement" type = 'checkbox' id="check">
+                <label class="agreement" for="check">I Agree</label>
+                <p class="agreement">By clicking <span id="blBack">Register</span>, you agree to the <span id="TaS">Terms and Conditions</span> set out by this
                     site, including out Cookie Use
                 </p>
             </div>
 
-            <button type="submit">Register</button>
-            <button type="submit">Sign In</button>
+            <button id='register' type="submit">Register</button>
+            <button id='signUp' type="submit">Sign In</button>
         </form>
     </body>
 
